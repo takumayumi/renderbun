@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Louis George Cafe";
+    src:
+      url("../fonts/Louis George Cafe Bold Italic.woff2") format("woff2"),
+      url("../fonts/Louis George Cafe Bold Italic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Louis George Cafe";
+    src:
+      url("../fonts/Louis George Cafe Bold.woff2") format("woff2"),
+      url("../fonts/Louis George Cafe Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Louis George Cafe";
+    src:
+      url("../fonts/Louis George Cafe Italic.woff2") format("woff2"),
+      url("../fonts/Louis George Cafe Italic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Louis George Cafe";
+    src:
+      url("../fonts/Louis George Cafe Light Italic.woff2") format("woff2"),
+      url("../fonts/Louis George Cafe Light Italic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Louis George Cafe";
+    src:
+      url("../fonts/Louis George Cafe Light.woff2") format("woff2"),
+      url("../fonts/Louis George Cafe Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Louis George Cafe";
+    src:
+      url("../fonts/Louis George Cafe.woff2") format("woff2"),
+      url("../fonts/Louis George Cafe.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Starborn";
+    src:
+      url("../fonts/Starborn.woff2") format("woff2"),
+      url("../fonts/Starborn.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-0 bg-transparent;
+  }
+
+  ::-moz-selection,
+  ::selection {
+    @apply bg-green text-yellow;
+  }
+
+  html,
+  body {
+    @apply full relative m-0 scroll-smooth bg-magenta p-0 font-["Louis_George_Cafe",_"Segoe_UI",_Tahoma,_Geneva,_Verdana,_sans-serif] [&::-webkit-scrollbar]:hidden;
+  }
+
+  body,
+  .body {
+    @apply text-xl leading-relaxed text-yellow sm:text-3xl sm:leading-relaxed lg:text-4xl lg:leading-relaxed;
+  }
+
+  #root {
+    @apply relative h-full w-full;
+  }
+
+  h1,
+  .h1 {
+    @apply mb-10 mt-5 text-4xl font-bold sm:text-6xl lg:mb-20 lg:mt-10 lg:text-7xl;
+  }
+
+  h2,
+  .h2 {
+    @apply mb-10 mt-5 text-3xl font-bold leading-snug sm:text-5xl sm:leading-snug lg:mb-20 lg:mt-10 lg:text-6xl lg:leading-snug;
+  }
+
+  h3,
+  .h3 {
+    @apply my-10 text-2xl font-bold sm:text-4xl lg:my-20 lg:text-5xl;
+  }
+
+  h4,
+  .h4 {
+    @apply text-xl font-bold sm:text-3xl lg:text-4xl;
+  }
+
+  p a {
+    @apply text-green underline;
+  }
+}
+
+@layer components {
+  .wrapper {
+    @apply container mx-auto px-10;
+  }
+}
+
+@layer utilities {
+  .full {
+    @apply h-full w-full;
+  }
+
+  .section-offset {
+    @apply pointer-events-none fixed left-0 z-40 h-5 w-full from-magenta/5 to-magenta;
+  }
+
+  .section-padding {
+    @apply pointer-events-none fixed left-0 z-40 w-full bg-magenta;
+  }
+}
