@@ -15,7 +15,7 @@ It is designed to present a beautiful, responsive display of 3D models in a mode
 - **React**: UI library for building responsive interfaces  
 - **React Three Fiber**: React renderer for Three.js  
 - **Drei**: Helpers for React Three Fiber (like orbit controls, environment, etc.)  
-- **Tailwind CSS**: Utility-first CSS for styling  
+- **Tailwind CSS 3**: Utility-first CSS for styling  
 - **Vite**: Lightning-fast build tool for development and bundling  
 
 ## Credits
